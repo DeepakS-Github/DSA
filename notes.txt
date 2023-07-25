@@ -96,6 +96,8 @@
 6. Shortest Path In Undirected Path (with no weight) -> Hint: BFS always goes while taking shortest path.
 NOTE: Everything is important
 
+NOTE: For bridge in graph -> First see Jenny's lecture then watch another one
+
 
 
 
@@ -147,3 +149,7 @@ Notes:
 23. Prim's algo and Krushkal's algo is used to find minimum spanning tree
 24. When you convert a graph into a tree such that it contains n nodes and n-1 edges then the graph is called spanning tree.
 25. If spanning tree contains the minimum possible weight to cover every nodes each then the graph is called minimum spanning tree.
+26. In krushkal's algo, we need to use disjoint set: union() and findParent() function is used, research shows that both function have O(1) time complexity, which is true when you dry run the code using pen and paper.
+27. Kosaraju's algo -> Kosaraju-Sharir's algorithm (also known as Kosaraju's algorithm) is a linear time algorithm to find the strongly connected components of a directed graph.
+28. Dijkstra's algo, does not work for negative edges, that is why we use Bellman Ford algo.
+29. Bellman ford algo is used to find a graph is negative or not, if it is not negative graph then it can find the shortest distance between two nodes. (negative graph are those graph in which when we move from one node to another in weighted graph, the distance becomes smaller and smaller in negative till infinite, so we cannot find the distance between two nodes in negative graph), for more info watch love babbar youtube video.
