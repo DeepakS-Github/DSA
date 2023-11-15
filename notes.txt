@@ -15,6 +15,11 @@
 1. Reverse a string using stack - GFG (another concept)
 2. Merge Intervals
 
+-- Binary Tree
+1. Top view of the tree - Hint: Remember to store the level of the tree also. (Solve gfg problem, you will understand) [Similarly for bottom level]
+2. Diagonal Traveral
+3. Convert Binary Tree to DLL - imp
+
 
 
 // Video 
@@ -64,7 +69,7 @@
 -- Heap
 1. Heap Sort
 2. Build Heap
-3. Insertion and Deletion and heapify -> Only see the how it works
+3. Insertion and Deletion and heapify -> Only see how it works
 4. Kth smallest and largest element in an array.
 5. Is Binary Tree Heap? -> Hint: First check if Binary tree is CBT (check if Index is within the size of binary tree), and then check heap property.
 6. Convert almost complete BST to max heap -> Hint: first create the inorder vector and then replace values of bst in preorder traversal.
@@ -78,6 +83,11 @@
 -- Backtracking
 1. N Queen Problem
 2. Sudoku Solver (most important)
+
+Note: To check subgrid:     
+	// Check subgrid
+           int subgridRow = (row / 3) * 3;
+           int subgridCol = (col / 3) * 3;
 -------------------------------------------------------- Completed -----------------------------------------------------------------------
 
 
@@ -99,7 +109,11 @@ NOTE: Everything is important
 NOTE: For bridge in graph -> First see Jenny's lecture then watch another one
 
 
-
+-- Dynamic Programming
+1. Memoization Method-> Top-down approach (Recursion)
+2. Tabular Method -> Bottom-up approach
+3. Space Optimized
+4. Optimization: 1<2<3
 
 
 
@@ -120,7 +134,19 @@ struct comparator{
 
 priority_queue<pair<int,int>, vector<pair<int,int>>, comparator> pq;
 
+4. To find all the prime factors of a number in sqrt(N) time and O(1) space:
 
+        long long int ans = 1;
+        for(int i=2; i<=sqrt(N); i++){
+            while(N%i==0){
+                N = N/i;
+                cout << i << endl;
+            }
+        }
+        if(N>1){
+            cout << N << endl;
+        }
+        
 
 
 Notes:
@@ -153,3 +179,19 @@ Notes:
 27. Kosaraju's algo -> Kosaraju-Sharir's algorithm (also known as Kosaraju's algorithm) is a linear time algorithm to find the strongly connected components of a directed graph.
 28. Dijkstra's algo, does not work for negative edges, that is why we use Bellman Ford algo.
 29. Bellman ford algo is used to find a graph is negative or not, if it is not negative graph then it can find the shortest distance between two nodes. (negative graph are those graph in which when we move from one node to another in weighted graph, the distance becomes smaller and smaller in negative till infinite, so we cannot find the distance between two nodes in negative graph), for more info watch love babbar youtube video.
+30. Catalan Number: Catalan Number for N is equal to the number of expressions containing N pairs of paranthesis that are correct matched, i.e., for each of the N '(' there exist N ')' on there right and vice versa. 
+Direct Formulae: C(n) = C0Cn-1+C1Cn-2+.....+CiCn-i-1+...+Cn-1C0
+Application of catalan number:
+Catalan numbers have applications in engineering, computational geometry, geographic information systems, geodesy, cryptography, and medicine1. Some specific applications of Catalan numbers include2:
+	Number of valid parenthesis expressions
+	Number of rooted binary trees with n internal nodes
+	Number of ways to cut an (n+2)-gon into n triangles
+	Number of “mountain ranges” that can be formed with n upstrokes and n downstrokes
+	Number of paths of length 2n that lead from the upper left corner to the lower right corner.
+
+
+
+
+Notes DP:
+1. DP question is solved using: Top-down approach -> Recursion + Memoization, Bottom-up approach -> Tabulation method.
+2. We will solve DP question in all ways. -> First by Top-down, and then bottom-up and then try for space optimization.

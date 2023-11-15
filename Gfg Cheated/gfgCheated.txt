@@ -1,0 +1,11 @@
+1. https://practice.geeksforgeeks.org/problems/shortest-source-to-destination-path3544/1 (02-08-2023)
+2. https://practice.geeksforgeeks.org/problems/flip-bits0240/1 (NOT Cheated) But good concept (Kadane's Algo concept)
+3. https://practice.geeksforgeeks.org/problems/next-smallest-palindrome4740/1
+4. https://practice.geeksforgeeks.org/problems/multiply-two-strings/1
+5. https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1
+6. https://practice.geeksforgeeks.org/problems/avl-tree-deletion/1 (Very hard question)
+7. https://practice.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1
+8. https://practice.geeksforgeeks.org/problems/mother-vertex/1 (Understood the concept and solved)
+9. https://practice.geeksforgeeks.org/problems/lucky-numbers2911/1 (conceptual, good and easy maths question)
+10. https://practice.geeksforgeeks.org/problems/perfect-numbers3207/1 (conceptual, good and easy maths question)
+11. https://practice.geeksforgeeks.org/problems/rotate-bits4524/1 (Understood the concept and then solved, basic but very conceptual bit manipulation rotation question)
